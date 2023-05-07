@@ -87,6 +87,16 @@ function buildTask(data) {
 
     taskDescription.addEventListener('focus', (event) => {
         event.target.nextElementSibling.classList.toggle('hidden');
+        taskDescription.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+              buttonPressed = false;
+              event.target.classList.remove('task-description-check-active');
+              const taskId = event.target.parentNode.parentNode.id;
+              list[data[0].index].description = taskDescription.value;
+              event.target.classList.add('task-description-check');
+              saveData(list);
+            }
+          });
     });
 
     const itemCheck = document.createElement('i');
