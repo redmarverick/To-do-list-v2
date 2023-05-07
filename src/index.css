@@ -28,6 +28,13 @@ form {
   margin: 20px 0;
 }
 
+.task-description-check:active {
+  background-color: #ccc;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2);
+  outline: none;
+}
+
+
 label {
   display: block;
   width: 31em;
