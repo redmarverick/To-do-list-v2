@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/index.css" />
+  <script src="https://kit.fontawesome.com/a1c06e2fcd.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lodash@4.17.20"></script>
+  <title>To Do List</title>
+</head>
+<body class="align-middle">
+  <main>
+    <header id="title" class="align-middle title">
+      <h1>To do List</h1>
+      <i class="fa-solid fa-repeat"></i>
+    </header>
+    <form id="form">
+      <label for="newtask">
+        <input class="addtask" type="text" placeholder="What do you want to add?" name="newtask" id="newtask">
+      </label>
+    </form>
+    <ul id="list-task">
+    </ul>
+    <button id="btn-clear-task">Clear all completed</button>
+  </main>
+  <script src="./src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.align-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header styles */
+.title {
+  margin: 20px 0;
+}
+
+#title {
+  font-size: 36px;
+}
+
+/* Form styles */
+form {
+  margin: 20px 0;
+}
+
+.task-description-check:active {
+  background-color: #ccc;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+label {
+  display: block;
+  width: 31em;
+}
+
+.addtask {
+  width: 96%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  background-color: #444;
+  color: #fff;
+}
+
+/* List styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#list-task {
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+li.completed {
+  background-color: #666;
+  text-decoration: line-through;
+}
+
+/* Button styles */
+button {
+  margin: 20px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#btn-clear-task {
+  background-color: #dc3545;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.align-middle.dark-mode {
+  color: #fff;
+}
+
+.title.dark-mode {
+  color: #fff;
+}
+
+.addtask.dark-mode {
+  background-color: #999;
+  color: #000;
+}
+
+li.dark-mode {
+  background-color: #666;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+li.completed.dark-mode {
+  background-color: #444;
+  text-decoration: line-through;
+}
+
+button.dark-mode {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+button.dark-mode:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0.3em 1em 1em;
+  background-color: #333;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.task-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.task-description {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+  margin-left: 1em;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.task-description:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.task i {
+  width: 30px;
+}
