@@ -3,7 +3,7 @@ import { buildTask, list, saveData } from './modules/crud.js';
 
 const addTask = document.getElementById('form');
 
-function readLocal() {
+window.addEventListener('load', () => {
   const savedData = JSON.parse(localStorage.getItem('taskList'));
   if (savedData !== null) {
     for (let i = 0; i < savedData.length; i += 1) {
@@ -15,10 +15,6 @@ function readLocal() {
       buildTask(data, i);
     }
   }
-}
-
-window.addEventListener('load', () => {
-  readLocal();
 });
 
 addTask.addEventListener('submit', (event) => {
